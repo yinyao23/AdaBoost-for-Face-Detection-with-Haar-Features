@@ -2,13 +2,13 @@
 
 Run this project in the following 4 steps.
 
-1. Add the "dataset" folder under the main directory "Adaboost"
+1. Add the "dataset" folder under the main directory.
 
 2. Pre-process: Run the "extract_haar_features.py" in "pre-processing" folder to generate 3 json files. 
 
 	Detail: the haar features are defined as the same as the original paper "Rapid Object Detection using a Boosted Cascade of Simple Features". The 3 json files are "haar_feature_coordinates.json", "testset_haar_features.json" and "trainset_haar_features.json", which will be utilized in the next training process.
 
-3. Run the "train.py" to obtain the 10 decision stump classifiers. 
+3. Run the "train.py" to obtain the top 10 decision stump classifiers. 
 
 	Detail: In each training round of AdaBoost, a simple classifier (haar feature) is selected by optimizing the ERM for decision stumps. The "classifiers.json" file will be generated to record the coordinates of the simple classifiers. And the "results" folder will be generated to visualize the extracted haar features on a test image.
 
