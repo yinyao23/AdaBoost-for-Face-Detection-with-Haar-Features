@@ -131,7 +131,3 @@ if __name__ == '__main__':
     print(cla)
   feature_coordinates = obtain_coordinates_for_classifiers(classifiers, visualization=True)
 
-
-
-
-
