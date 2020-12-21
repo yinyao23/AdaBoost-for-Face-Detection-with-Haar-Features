@@ -116,11 +116,11 @@ if __name__ == '__main__':
   '''
   1. Use AdaBoost to obtain the final classifier
   '''
-  # with open('pre-processing/trainset_haar_features.json', 'r') as file:
-  #   trainset = json.load(file)['train']
-  # classifiers = AdaBoost(trainset)
-  # with open('classifiers.json', 'w') as file:
-  #   json.dump({'classifiers': classifiers}, file)
+  with open('pre-processing/trainset_haar_features.json', 'r') as file:
+    trainset = json.load(file)['train']
+  classifiers = AdaBoost(trainset)
+  with open('classifiers.json', 'w') as file:
+    json.dump({'classifiers': classifiers}, file)
 
   '''
   2. Analyze the selected features 
